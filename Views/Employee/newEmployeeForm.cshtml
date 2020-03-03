@@ -1,0 +1,19 @@
+﻿@model MVCTestCompany.Models.PeopleModel
+@{
+    ViewBag.Title = "New Employee Form";
+}
+
+<h2>New Employee Form</h2>
+<form name="newEmployee" method="post">
+    <p>First Name:<input type="text" name="firstName" id="firstName" /></p>
+    <p>Last Name:<input type="text" name="lastName" id="lastName" /></p>
+    <p>Title:<input type="text" name="title" id="title" /></p>
+    <p>Dept#:<input type="number" min="1"max="10"name="deptNumber" id="deptNumber" /></p>
+    <p>Salary Type(s=Salary, h=Hourly, p=Picerate): <input type="text" name="type"id="type" /></p>
+    <p>Is the employee currently active?(choose and option) <select name="isActive" id="isActive">
+               <option value="true">Yes</option>
+               <option value="false">No</option>
+               </select>
+    </p>
+    <input type="submit" value="Submit Employee" />
+</form>
